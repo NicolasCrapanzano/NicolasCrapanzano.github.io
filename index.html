@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8">
+    <title>Tribute page</title>
+    <!--Device width-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!--Open sans Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div id="bg-animation-left">
+        <img class="cube" id="one" src="Images/GrassNew.png" alt="Cube-image">
+        <img class="cube" id="two" src="Images/GrassNew.png" alt="Cube-image">
+    </div>
+    <div id="bg-animation-right">
+        <img class="cube" id="two" src="Images/GrassNew.png" alt="Cube-image">
+        <img class="cube" id="one" src="Images/GrassNew.png" alt="Cube-image">
+    </div>
+    <div id = "main">
+        
+        <header>
+            <h1 id="title">Markus persson Aka "Notch"</h1>
+            <h2 id="subtitle">Creator of minecraft</h2>
+        </header>
+        <figure id="img-div">
+            <img id="image" src="Images/Notch.jpg" alt="An image"> 
+            <figcaption id="img-caption">Description of the image</figcaption>
+            
+        </figure>
+
+        <div id="tribute-info">
+            <h2>Relevant information</h2>
+            <ul>
+                <li>
+                    <strong>1979</strong>
+                    - Born on Stockholm, Sweden.
+                </li>
+                <li>
+                    <strong>1986</strong>
+                    - Started programming with a Commodore 128 computer at age 7.
+                </li>
+                <li>
+                    <strong>2004</strong>
+                    - At age 18 he started working with Midasplayer, later known as King.com. Where he met a developer called Jakob Porsér and became friends.
+                </li>
+                <li>
+                    <strong>March 2009</strong>
+                    - Persson and Porsér started working on their own games some for events like game jams.
+                    This caused them some problems with their employers, Midasplayer, wich prompted Persson to leave the company and join jAlbum.
+                </li>
+                <li>
+                    <strong>May 2009</strong>
+                    - Notch spent one week building a prototype for a 3D cave simulator, based on another game called "Infiniminer" by Zachtronics.
+                    The game consisted on a Lego-like playstyle, where everything was made out of cubes, wich you could remove and add.
+                    The first release of the game was made privately on the TigIRC forums the 16 of may, and a public version
+                    known as classic released was the next day and started seeing some small succes among the users of the forum.
+                </li>
+                <li>
+                    <strong>2000</strong>
+                    - Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quis at nulla aperiam, reprehenderit perferendis rerum eaque sapiente eveniet, delectus a dolorem et quasi minus ipsa omnis! Aspernatur, adipisci autem.
+                </li>
+            </ul>
+        </div>
+        <h3>Learn more <a id="tribute-link" href="https://www.biography.com/business-figure/markus-persson" target="_blank">Here !</a></h3>
+    
+    <!--this scripts get the total height of the screen and pass half of it 
+        as padding for the cubes so they can scroll from top to bottom
+        without expanding the page height
+
+        second part of the screen gets size of the banners to set the child icons to half of
+        its parents size
+    -->
+    <script>
+        var clientHeight = document.body.scrollHeight; 
+        clientHeight =clientHeight / 2;
+        console.log(clientHeight);
+        var cubes_anim = document.getElementsByClassName("cube");
+        for (let index = 0; index < cubes_anim.length; index++) {
+            cubes_anim[index].style.paddingTop  = clientHeight;
+        }   
+
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>

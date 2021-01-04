@@ -1,0 +1,102 @@
+body{
+    
+    background: url(images/dirt.png);
+    background-size:  32px;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns:1fr 5fr 1fr ;
+    grid-template-rows: 10fr 1fr;
+}
+#main{
+    
+    background: url(images/stone.png);
+    background-size: 32px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    grid-area: 1 / 2 / 3 / 3;
+}
+#title{
+    font-weight: 700;
+    
+}
+#subtitle{
+    font-weight: 400;
+    
+}
+#img-div{ 
+    
+    padding: 20px;
+    
+}
+#image{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+#img-caption{
+    
+}
+#tribute-info{
+    
+}
+#tribute-info ul {
+
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+#tribute-info ul li{
+    
+    padding-bottom: 15px;
+}
+#bg-animation-left {
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+#bg-animation-right{
+    grid-area: 1 / 3 / 2 / 4;
+
+}
+.cube{
+    width: 100px;
+    height: auto;
+}
+#one{
+    animation: cube_scroll_01 6s linear infinite normal;
+}
+#two{
+    animation: cube_scroll_01 6s ease-out infinite normal;
+}
+
+
+@keyframes cube_scroll_01{
+    0%{
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.1;
+        transform : translateY(100%);
+    }
+}
+
+@media (max-width: 1400px) {
+    #two{
+        display: none;
+    }
+}
+@media (max-width: 750px) {
+    .cube{
+        width: 40px;
+    }
+}
+@media (max-width: 550px) {
+    #bg-animation-left{
+        display: none;
+    }
+    #bg-animation-right{
+        display: none;
+    }
+}
