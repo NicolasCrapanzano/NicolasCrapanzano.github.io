@@ -1,6 +1,6 @@
 body{
     
-    background: url(images/dirt.png);
+    background: url(Images/dirt.png);
     background-size:  32px;
     background-attachment: fixed;
     display: grid;
@@ -9,7 +9,7 @@ body{
 }
 #main{
     
-    background: url(images/stone.png);
+    background: url(Images/stone.png);
     background-size: 32px;
     text-align: center;
     padding: 10px 0 10px 0;
