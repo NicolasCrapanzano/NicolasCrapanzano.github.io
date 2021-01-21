@@ -1,10 +1,6 @@
 body{
     
-<<<<<<< HEAD
-    background: url(Images/dirt.png);
-=======
     background: url(images/BackgroundBlocks/dirt.png);
->>>>>>> bb7954ad3a83ecde70f44a7483a62b9b7ed78463
     background-size:  32px;
     background-attachment: fixed;
     display: grid;
@@ -13,11 +9,7 @@ body{
 }
 #main{
     
-<<<<<<< HEAD
-    background: url(Images/stone.png);
-=======
     background: url(images/BackgroundBlocks/stone.png);
->>>>>>> bb7954ad3a83ecde70f44a7483a62b9b7ed78463
     background-size: 32px;
     text-align: center;
     padding: 10px 0 10px 0;
